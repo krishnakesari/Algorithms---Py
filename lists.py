@@ -31,3 +31,12 @@ for i in range(16):
     lst.append(f1(f2(i))) 
 print(lst) 
 print([f1(x)  for x in range(64) if x in [f2(j) for j in range(16)]]) 
+
+# Multiplying elements in a list with each other
+list1 = [[1,2,3], [4,5,6]]
+print([i * j for i in list1[0] for j in list1[1]])
+
+# Splitting sentence with complex functions
+words = 'here is a sentence'.split()
+print([[word, len(word)] for word in words])
+
