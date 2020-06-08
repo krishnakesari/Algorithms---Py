@@ -10,3 +10,5 @@
 # 4. Empty sequence or mapping
 # 5. User defined classes __len__() or __bool__()
 
+# Comparision and Arithmetic Operators
+
