@@ -1,5 +1,5 @@
 
-
+# Each word is used as a key and number of occurrences as it's value
 
 def wordcount(fname): 
     try: 
