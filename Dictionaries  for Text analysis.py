@@ -1,3 +1,6 @@
+
+
+
 def wordcount(fname): 
     try: 
         fhand=open(fname) 
@@ -16,6 +19,6 @@ def wordcount(fname):
     return(count) 
 
 count=wordcount('alice.txt') 
-filtered = { key:value for key, value in count.items() if value  < 20 and value > 15 } 
+filtered = { key:value for key, value in count.items() if value  < 13 and value > 3 } 
 
 print(filtered)
