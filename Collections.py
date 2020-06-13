@@ -45,3 +45,28 @@ cm2['theme']
 print(cm2['showIndex'])
 
 # Counter Objects - each dictionary key is an hashable object 
+from collections import Counter
+c1 = Counter('anysequence')
+c2 = Counter({'a':1, 'c':1, 'e':3})
+c3 = Counter(a = 1, c = 1, e = 3)
+
+print(c1)
+
+from collections import Counter
+ct = Counter()
+ct.update('abca')
+print(ct)
+ct.update({'a':3})
+print(ct)
+
+for item in ct:
+    print('%s : %d' % (item, ct[item]))
+
+ct2 = sorted(ct.elements())
+print(ct2)
+
+print(ct.most_common())
+
+ct.subtract({'a':2})
+print(ct)
+
