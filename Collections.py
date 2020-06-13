@@ -31,3 +31,17 @@ dq2=deque([],maxlen=3)
 for i in range(6): 
     dq2.append(i) 
     print(dq2) 
+
+
+# Chain maps - Ordered list of dictionaries
+
+from collections import ChainMap
+defaults = {'theme':'Default', 'language':'eng', 'showIndex':True, 'showFooter':True}
+cm = ChainMap(defaults)
+
+cm2 = cm.new_child({'theme':'bluesky'})
+cm2['theme']
+
+print(cm2['showIndex'])
+
+# Counter Objects - each dictionary key is an hashable object 
