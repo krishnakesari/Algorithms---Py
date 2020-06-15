@@ -19,3 +19,8 @@ print(od1)
 for k, v in od1.items():
     print(k,v)
 
+# Using Lambda functions
+od3 = OrderedDict(sorted(od1.items(), key = lambda t : (4*t[1]) - t[1]**2))
+
+print(od3.values())
+
