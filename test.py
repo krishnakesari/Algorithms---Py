@@ -68,12 +68,15 @@ if __name__ == '__main__': main()
 
 
 
+## list
+from collections import OrderedDict
 
+tc = OrderedDict()
+tc = [('One', 1), ('two',2)]
+tc.update(tc)
 
-
-
-
-
+for k, v in tc.items():
+    print(k,v)
 
 
 
