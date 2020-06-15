@@ -16,3 +16,6 @@ kvs = [('three',3), ('four', 4), ('five',5), ('six',6)]
 od1.update(kvs)
 print(od1)
 
+for k, v in od1.items():
+    print(k,v)
+
