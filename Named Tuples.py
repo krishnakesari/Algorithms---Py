@@ -1,3 +1,5 @@
+# Named tuples returns a tuple like object that has fields accessible with named indexes
+
 from collections import namedtuple
 
 space = namedtuple('space', 'x y z')
