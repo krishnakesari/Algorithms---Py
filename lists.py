@@ -41,3 +41,5 @@ words = 'here is a sentence'.split()
 print([[word, len(word)] for word in words])
 
 ## Testing lists
+l = [1,2,3,4]
+print(l)
