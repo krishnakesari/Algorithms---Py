@@ -40,3 +40,4 @@ print([i * j for i in list1[0] for j in list1[1]])
 words = 'here is a sentence'.split()
 print([[word, len(word)] for word in words])
 
+## Testing lists
