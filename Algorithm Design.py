@@ -21,7 +21,16 @@ def factorial(n):
 def sum(n):
     if n > 0:
         f = n + 1
-        print(f"for a value of n = {n}, value of f  {f}")
+        print(f"If n = {n}, the value of f is {f}")
 
 sum(6)
 
+# Back Tracking (Divide and Conquer)
+## Traversing tree structure, if needed we can backtrack to previous node and traverse a different branch
+
+def bitStr(n,s):
+    if n == 1 : return s
+    # Generate all possible permutations of a given string
+    return [digit + bits for digit in bitStr(1,s) for bits in bitStr(n-1,s)]
+
+print(bitStr(3,'abc'))
