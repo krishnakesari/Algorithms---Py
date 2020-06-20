@@ -18,8 +18,10 @@ def factorial(n):
         return(f)
         factorial(4)
 
-def factorial(n):
-    if n > 2:
-        print(n)
+def sum(n):
+    if n > 0:
+        f = n + 1
+        print(f"for a value of n = {n}, value of f = {f}")
 
-factorial(6)
+sum(6)
+
