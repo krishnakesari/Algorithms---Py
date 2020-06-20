@@ -21,7 +21,7 @@ def factorial(n):
 def sum(n):
     if n > 0:
         f = n + 1
-        print(f"for a value of n = {n}, value of f = {f}")
+        print(f"for a value of n = {n}, value of f  {f}")
 
 sum(6)
 
