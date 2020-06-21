@@ -72,4 +72,11 @@ def check_brackets(statement):
     else: 
         return True 
     
-    
+sl = ( 
+   "{(foo)(bar)}[hello](((this)is)a)test", 
+   "{(foo)(bar)}[hello](((this)is)atest", 
+   "{(foo)(bar)}[hello](((this)is)a)test))" 
+) 
+for s in sl: 
+   m = check_brackets(s) 
+   print("{}: {}".format(s, m)) 
