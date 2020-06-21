@@ -44,10 +44,32 @@ def pop(self):
             return None
 
 # Peek Operation
-
+## If there is a top element, returns data or returns none
 def peek(self):
     if self.top:
         return self.top.data
     else:
         return None
 
+# Bracket matching application
+def check_brackets(statement): 
+    stack = Stack() 
+    for ch in statement: 
+        if ch in ('{', '[', '('): 
+            stack.push(ch) 
+        if ch in ('}', ']', ')'): 
+            last = stack.pop() 
+        if last is '{' and ch is '}': 
+            continue 
+        elif last is '[' and ch is ']': 
+            continue 
+        elif last is '(' and ch is ')': 
+            continue 
+        else: 
+            return False 
+    if stack.size > 0: 
+        return False 
+    else: 
+        return True 
+    
+    
