@@ -19,3 +19,12 @@ current = n1
 while current:
     print(current.data)
     current = current.left_child
+
+# Binary Tree: Should have a maximum of two children
+# Binart search trees: left side > 5 and right side < 5
+
+# Binary search tree implementation
+class Tree:
+    def __int__(self):
+        self.root_node = None
+
